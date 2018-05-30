@@ -1,0 +1,110 @@
+						
+					
+1. 	Design an algorithm that will prompt the user for three letters, receive those letters as input, 
+    sort them into ascending sequence and display them to the monitor		
+
+	
+	ALGORITHM : compare each letters and sort by ascending order 
+	
+	===================================
+	INPUT : String firstL, secondL, thirdL
+
+	PROCESSING STEPS : compare firstL and secondL and change by ascending order 
+	                   and then compare thirdL to firstL and also compare to thirdL to secondL
+
+	OUTPUTS : all three letters by ascending order
+
+	=================================
+	PSEUDOCODE : Initialize String firstL to null
+	             Initialize String secondL to null
+				 Initialize String thirdL to null
+				 Initialize String temp to null
+	             Prompt user input a first letter
+				 Get firstL
+				 prompt user input a second letter
+				 if second letter is same to first letter
+				    prompt user to input another letter
+				 Get secondL
+				 prompt user input a third letter
+				 if third letter is same to first letter or second letter
+				    prompt user to input another letter
+				 Get thirdL
+				 
+				 IF (firstL is greater than secondL)
+					 THEN
+					   temp = firstL
+					   firstL = secondL
+					   secondL = temp
+					   IF( FirstL is greater than thirdL)
+					   THEN
+							  temp = firstL
+							  firstL = thirdL
+							  thirdL = temp
+							  IF (secondL is greater than thirdL)
+							  THEN
+									temp = secondL
+									secondL = thirdL
+									thirdL = temp
+							  ENDIF
+						ENDIF
+					   ELSE 
+					   IF ( secondL is greater than thirdL)
+					   THEN
+							  temp = secondL
+							  secondL = thirdL
+							  thirdL = temp
+					   ENDIF
+					
+			     ELSE
+				 IF ( firstL is greater than thirdL)
+				 THEN 
+					temp = firstL
+					firstL=thirdL
+					thirdL=temp
+				 ELSE
+				 IF (secondL is greater than thirdL)
+				 THEN
+				    temp = secondL
+					secondL = thirdL
+					thirdL=temp
+				
+				Diaplay firstL, secondL, thirdL
+2. A program is required to read a customer’s name, a purchase amount and a tax code. 
+The tax code has been validated and will be one of the following:
+    0  tax exempt (0%)
+    1  state sales tax only (3%)
+    2  federal and state sales tax (5%)
+    3  special sales tax (7%)
+The program must then compute the sales tax and the total amount due,and print the customer’s name, 
+purchase amount, sales tax and total amount due.
+
+    ALGORITHM : compute the tax and total amount due and display 
+	
+	===================================
+	INPUT : String name, purchase, taxCode
+
+	PROCESSING STEPS : According to the input tax code, compute each tax 
+	and add it to the purchase to get totla amount
+
+	OUTPUTS : sales tax and total amount
+
+	=================================
+	PSEUDOCODE : Initialize String name to null
+	             Initialize double purchase to zero
+				 Initialize String taxCode to null
+				 Initialize double salesTax to zero
+				 Initialize double totlaAmount to zero
+	             Prompt user input name, purchase, and taxCode
+				 Get name, purchase, taxCode
+				 CASE OF taxCode
+				    0: salesTax =0 totlaAmount=purchase
+					
+					
+				   
+					
+					
+					
+					
+					
+					
+			 
